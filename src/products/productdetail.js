@@ -2,14 +2,14 @@ import React, {Component} from "react";
 
 class ProductDetail extends Component{
     render(){
-        const p = this.props.p
+        const obj = this.props.productDetail;
         return(
-            <div>
-                <h4>{p.name}</h4>
-                <h4>{p.category}</h4>
-                <h4>{p.description}</h4>
+            <div style={{ color: "yellow", border: "1px solid yellow" }}>
+                <h4>{obj.name}</h4>
+                <h5>Category: {obj.category}</h5>
+                <p>Descriprion: {obj.description}</p>
             </div>
-        )
+        );
     }
 }
 
