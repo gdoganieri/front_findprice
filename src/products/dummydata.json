@@ -1,0 +1,17 @@
+[
+  {
+    "name": "zucchina",
+    "category": "alimenti",
+    "description": "ciao sono una zucchina"
+  },
+  {
+    "name": "panino",
+    "category": "alimenti",
+    "description": "ciao sono una panino"
+  },
+  {
+    "name": "gomma",
+    "category": "auto",
+    "description": "ciao sono una gomma japponese"
+  }
+]
