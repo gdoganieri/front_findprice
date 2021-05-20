@@ -5,7 +5,7 @@ class ProductDetail extends Component{
         const obj = this.props.productDetail;
         return(
             <div style={{ color: "yellow", border: "1px solid yellow" }}>
-                <h4>{obj.name}</h4>
+                <h4>{obj.product_name}</h4>
                 <h5>Category: {obj.category}</h5>
                 <p>Descriprion: {obj.description}</p>
             </div>

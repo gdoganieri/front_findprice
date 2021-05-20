@@ -1,16 +1,16 @@
 [
   {
-    "name": "zucchina",
+    "product_name": "zucchina",
     "category": "alimenti",
     "description": "ciao sono una zucchina"
   },
   {
-    "name": "panino",
+    "product_name": "panino",
     "category": "alimenti",
     "description": "ciao sono una panino"
   },
   {
-    "name": "gomma",
+    "product_name": "gomma",
     "category": "auto",
     "description": "ciao sono una gomma japponese"
   }

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import ProductDetail from "./productdetail";
+import ProductForm from "../productform";
 import axios from "axios";
 
 
@@ -46,16 +47,18 @@ class ProductsList extends Component{
     render(){
         return(
             <div>
+                <ProductForm/>
                 {this.state.productsData.map(item => {
                     return (
                         <h3 key={item.id} onClick={() => this.showProductDetails(item)}>
-                            {item.name}
+                            {item.product_name}
                         </h3>
                     );
                 })}
                 {this.state.showComponent ? (
                     <ProductDetail productDetail = {this.state.product}/>
                 ) : null}
+
             </div>
         );
     }
