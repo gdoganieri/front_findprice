@@ -19,11 +19,14 @@ class ProductForm extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         console.log(this.state.product_name);
-        axios.post("http://127.0.0.1:8000/findprice/create/", {
+        axios.post("http://127.0.0.1:8000/findprice/create/", {headers: {
+    'Authorization': `token ${localStorage.getItem('token')}`
+  }},{
             product_name: this.state.product_name,
             category: this.state.category,
             description: this.state.description,
-        })
+        },
+            )
             .then((response) => {
                 console.log(response);
             })

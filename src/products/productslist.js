@@ -36,7 +36,7 @@ class ProductsList extends Component{
     componentDidMount() {
         axios.get('http://localhost:8000/findprice/products',
             {headers: {
-    'Authorization': `token ${access_token}`
+    'Authorization': `token ${localStorage.getItem('token')}`
   }})
             .then((response) =>{
                 this.setState({productsData:response.data})

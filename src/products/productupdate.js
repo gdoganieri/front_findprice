@@ -25,8 +25,8 @@ class ProductUpdate extends Component {
             description: this.state.value,
         }
     )
-    .
-        then((response) => {
+
+            .then((response) => {
             console.log(response);
         })
             .catch(function (error) {
